@@ -408,14 +408,14 @@ function _is_forbidden_rdf_node_element ($local_name)
    * @access	private
    */
 function _istalnum($val) {
-  return ereg("[A-Za-z0-9]",$val);
+  return preg_match('/[A-Za-z0-9]/',$val);
 }
   /**
    * @param string $val
    * @access	private
    */
 function _istalpha($val) {
-  return ereg("[A-Za-z]",$val);
+  return preg_match('/[A-Za-z]/',$val);
 }
 
   /**
